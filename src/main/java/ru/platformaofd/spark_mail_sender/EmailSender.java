@@ -18,8 +18,8 @@ public class EmailSender {
             props.put("mail.smtp.auth", "true");
             props.put("mail.smtp.connectiontimeout", "10000");
 
-            final String EmailUser = "evotor\\zeppelin";
-            final String EmailPassword = "Bo9aihah7h";
+            final String EmailUser = "";
+            final String EmailPassword = "";
 
             Session session = Session.getInstance(props, new javax.mail.Authenticator() {
                 protected PasswordAuthentication getPasswordAuthentication() {
@@ -29,7 +29,7 @@ public class EmailSender {
             });
 
             session.setDebug(true);
-            InternetAddress fromAddress = new InternetAddress("zeppelin@platformaofd.ru");
+            InternetAddress fromAddress = new InternetAddress("");
             InternetAddress toAddress = new InternetAddress(emailAddress);
             String msgBody = "This email send from a Java program.";
 
